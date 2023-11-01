@@ -1,5 +1,5 @@
 import {Sequelize, Model, DataTypes} from 'sequelize';
-
+import dotenv from 'dotenv';
 dotenv.config();
 
 const sequelize = new Sequelize(
@@ -9,9 +9,7 @@ const sequelize = new Sequelize(
     {
         host:process.env.DB_HOST,
         dialect:process.env.DB_DIALECT || 'mysql',
-        define:{
-            timestamps:false
-        },
+        port:process.env.DB_PORT,
     },
 );
 

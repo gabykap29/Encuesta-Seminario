@@ -6,10 +6,7 @@ export const Response = sequelize.define('Response',{
         primaryKey:true,
         autoIncrement:true,
     },
-    question_id:{
-        type: DataTypes.INTEGER,
-        allowNull:false,
-    },
+
     response:{
         type:DataTypes.STRING,
         allowNull:false,

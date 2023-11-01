@@ -14,10 +14,6 @@ export const Quiz = sequelize.define('Quiz',{
         type: DataTypes.INTEGER,
         allowNull:false,
     },
-    response_Id:{
-        type: DataTypes.INTEGER,
-        allowNull:false,
-    },
     education_level:{
         type:DataTypes.INTEGER,
         allowNull:false,

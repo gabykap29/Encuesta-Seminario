@@ -9,7 +9,8 @@ export const Question = sequelize.define('Question',{
     question:{
         type:DataTypes.STRING,
         allowNull:false,
-    }
+    },
+ 
 },{
     sequelize,
     paranoid:true,
