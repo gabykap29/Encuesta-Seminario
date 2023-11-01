@@ -12,4 +12,4 @@ Este sistema consta de lo siguiente:
 - Node.js con el framework EXPRESS
 - Mysql con la ORM Sequelize
 - Ejs como motor de platillas HTML
-- Javascript puro para manejas los fetchs
+- Javascript puro para manejar los fetchs
