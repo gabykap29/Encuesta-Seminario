@@ -54,7 +54,14 @@ Response.belongsToMany(Quiz,{
     foreignKey:'response_id',
     as:'quizResponses'
 });
-sequelize.sync();
+Locality.sync();
+Genre.sync()
+EducationLevel.sync();
+Question.sync();
+Response.sync();
+Quiz.sync();
+QuizResponses.sync();
+QuestionsResponses.sync();
 
 export const comprobations = async () => {
             let CountLocality = await Locality.count();

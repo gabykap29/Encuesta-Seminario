@@ -17,3 +17,5 @@ export const Locality = sequelize.define('Locality',{
     tableName:'Locality',
 });
 
+
+
