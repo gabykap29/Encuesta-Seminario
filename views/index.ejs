@@ -83,14 +83,15 @@
                 <label for="validationTooltip02" class="form-label"
                   ><b>¿Qué carrera está cursando?</b></label
                 >
-                <div class="input-group has-validation">
-                  <input
-                    type="text"
-                    class="form-control input"
-                    id="carrera"
-                    aria-describedby="validationTooltipUsernamePrepend"
-                    required
-                  />
+                <div class="input-group has-validation" id="divCarrera">
+                  <select class="form-select" id="carrera" required>
+                    <option selected disabled>Seleccione una carrera</option>
+                    <option value="TEC. SUP. EN DESARROLLO DE SOFTWARE"> TEC. SUP. EN DESARROLLO DE SOFTWARE </option>
+                    <option value="TEC. SUP. TELECOMUNICACIONES"> TEC. SUP. TELECOMUNICACIONES </option>
+                    <option value="TEC. SUP. MECATRÓNICA"> TEC. SUP. MECATRÓNICA </option>
+                    <option value="TEC. SUP. EN BIOQUÍMICA"> TEC. SUP. EN BIOQUÍMICA </option>
+                    <option value="OTROS">Otros</option>
+                  </select>
                 </div>
               </div>
               <div class="my-3">
@@ -99,14 +100,10 @@
                     >¿Que materia le parece la mas adecuada a su curso?</b
                   ></label
                 >
-                <div class="input-group has-validation">
-                  <input
-                    type="text"
-                    class="form-control input"
-                    id="materiaAdecuada"
-                    aria-describedby="validationTooltipUsernamePrepend"
-                    required
-                  />
+                <div class="input-group has-validation" id="divMateria">
+                  <select class="form-select" id="materiaAdecuada" required>
+                    <option selected disabled>Seleccione una materia</option>
+                  </select>
                 </div>
               </div>
               <div class="">
