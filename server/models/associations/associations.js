@@ -65,7 +65,7 @@ QuestionsResponses.sync();
 
 export const comprobations = async () => {
             let CountLocality = await Locality.count();
-            if(CountLocality === 0){
+            if(CountLocality < 50){
                 const localidades = [
                     { name: "Formosa" },
                     { name: "Colonia Pastoril" },
@@ -131,12 +131,31 @@ export const comprobations = async () => {
                     {  name: "Secundaria" },
                     {  name: "Preparatoria" },
                     {  name: "Universidad" },
-                    {  name: "Posgrado" }
+                    {  name: "Posgrado" },
+                    {  name: "Primaria incompleta" },
+                    {  name: "Secundaria Incompleta" },
+                    {  name: "Terciario incompleto" },
                 ]
                     for(let item of educationLevels){
                         console.log(item);
                         await EducationLevel.create(item);
                     };
+    }
+    let CountQuestions = await Question.count();
+    if(CountQuestions == 0){
+        const questions = [
+            "¿Qué carrera está cursando?",
+            "¿Que materia le parece la mas adecuada a su curso?",
+            "¿Que materia agregaría a su curso?",
+            "En cuanto al contenido en general, ¿le parece actualizado u obsoleto?",
+            "¿Consideras que alguna materia es innecesaria? En caso de haberla, coloque cual es"
+        ];
+        for(let item of questions){
+            console.log(item);
+            await Question.create({question:item});
+        }
+    }else{
+        console.log('Preguntas ya existentes!');
     }
 
     let Count = await Genre.count();
@@ -154,12 +173,6 @@ export const comprobations = async () => {
     console.log('Comprobaciones realizadas!');
 }
     
-
-
-
-
-
-        
 
 export {
     Locality,
