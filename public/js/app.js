@@ -9,6 +9,7 @@ const questionObsolete = document.getElementById('esObsoleto');
 const questionUnnecessary = document.getElementById('materiaInnecesaria');
 const divCareer = document.getElementById('divCarrera');
 const divSubject = document.getElementById('divMateria');
+const edad = document.getElementById('edad');
 const getLocality = async ()=>{
     const res = await fetch('/api/localities');
     const localidades = await res.json();
@@ -135,13 +136,14 @@ formEncuesta.addEventListener('submit',async(e)=>{
     formData.append('genre_id',selectGenre.value);
     formData.append("education_level",levelStudy.value)
     const responses = {
-        questionId: [1, 2, 3, 4, 5],
+        questionId: [1, 2, 3, 4, 5,6],
         response: [
             questionCareer.value,
             questionSuitableSubject.value,
             questionAddSubject.value,
             questionObsolete.value,
             questionUnnecessary.value,
+            edad.value
         ]
     };
 

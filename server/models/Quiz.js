@@ -6,7 +6,7 @@ export const Quiz = sequelize.define('Quiz',{
         primaryKey:true,
         autoIncrement:true,
     },
-    localidad_id:{
+    locality_id:{
         type:DataTypes.INTEGER,
         allowNull:false,
     },
@@ -14,7 +14,7 @@ export const Quiz = sequelize.define('Quiz',{
         type: DataTypes.INTEGER,
         allowNull:false,
     },
-    education_level:{
+    education_level_id:{
         type:DataTypes.INTEGER,
         allowNull:false,
     },

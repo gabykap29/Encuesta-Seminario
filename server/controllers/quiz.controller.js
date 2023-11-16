@@ -12,7 +12,9 @@ import { Quiz,
         const { localidad_id, genre_id, responses, education_level } = req.body;
         console.log(req.body);
         try {
-            const newQuiz = await Quiz.create({ localidad_id, genre_id, education_level });
+            let locality_id = parseInt(localidad_id);
+            let education_level_id = parseInt(education_level);
+            const newQuiz = await Quiz.create({ locality_id, genre_id, education_level_id });
             if (!newQuiz) {
                 return res.status(400).json({ message: 'Quiz not created' });
             }

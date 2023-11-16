@@ -36,12 +36,12 @@ Quiz.belongsTo(Genre,{
 });
 Response.belongsToMany(Question,{
     through: QuestionsResponses,
-    foreignKey:'question_id',
+    foreignKey:'response_id',
     as:'questions',
 });
 Question.belongsToMany(Response,{
     through:QuestionsResponses,
-    foreignKey:'response_id',
+    foreignKey:'question_id',
     as:'questions'
 });
 Quiz.belongsToMany(Response,{
