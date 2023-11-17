@@ -1,6 +1,5 @@
 import { sequelize } from "../../../database/db.js";
 import { Quiz } from "../Quiz.js";
-import { EducationLevel } from "../EducationLevel.js";
 import {Genre} from '../Genre.js';
 import {Locality} from '../Locality.js';
 import {Question} from '../Questions.js';
@@ -18,14 +17,6 @@ Quiz.belongsTo(Locality,{
     as:'locality_quiz',
 });
 
-EducationLevel.hasMany(Quiz,{
-    foreignKey:'education_level_id',
-    as:'education_level_quiz'
-});
-Quiz.belongsTo(EducationLevel,{
-    foreignKey:'education_level_id',
-    as:'education_level_quiz'
-});
 Genre.hasMany(Quiz,{
     foreignKey: 'genre_id',
     as:'genre_quiz',
@@ -56,7 +47,6 @@ Response.belongsToMany(Quiz,{
 });
 Locality.sync();
 Genre.sync()
-EducationLevel.sync();
 Question.sync();
 Response.sync();
 Quiz.sync();
@@ -124,23 +114,6 @@ export const comprobations = async () => {
                 }
             };
     
-            let CountLevel = await EducationLevel.count();
-            if(CountLevel === 0){
-                const educationLevels = [
-                    {  name: "Primaria" },
-                    {  name: "Secundaria" },
-                    {  name: "Preparatoria" },
-                    {  name: "Universidad" },
-                    {  name: "Posgrado" },
-                    {  name: "Primaria incompleta" },
-                    {  name: "Secundaria Incompleta" },
-                    {  name: "Terciario incompleto" },
-                ]
-                    for(let item of educationLevels){
-                        console.log(item);
-                        await EducationLevel.create(item);
-                    };
-    }
     let CountQuestions = await Question.count();
     if(CountQuestions == 0){
         const questions = [
@@ -148,7 +121,8 @@ export const comprobations = async () => {
             "¿Que materia le parece la mas adecuada a su curso?",
             "¿Que materia agregaría a su curso?",
             "En cuanto al contenido en general, ¿le parece actualizado u obsoleto?",
-            "¿Consideras que alguna materia es innecesaria? En caso de haberla, coloque cual es"
+            "¿Consideras que alguna materia es innecesaria?",
+            "Edad"
         ];
         for(let item of questions){
             console.log(item);
@@ -176,7 +150,6 @@ export const comprobations = async () => {
 
 export {
     Locality,
-    EducationLevel,
     Genre,
     Quiz,
     Response,

@@ -1,5 +1,4 @@
 import { Quiz,
-    EducationLevel,
     Genre,
     Locality,
     Question,
@@ -9,12 +8,11 @@ import { Quiz,
 
 
     export const createQuiz = async (req, res) => {
-        const { localidad_id, genre_id, responses, education_level } = req.body;
+        const { localidad_id, genre_id, responses } = req.body;
         console.log(req.body);
         try {
             let locality_id = parseInt(localidad_id);
-            let education_level_id = parseInt(education_level);
-            const newQuiz = await Quiz.create({ locality_id, genre_id, education_level_id });
+            const newQuiz = await Quiz.create({ locality_id, genre_id});
             if (!newQuiz) {
                 return res.status(400).json({ message: 'Quiz not created' });
             }
