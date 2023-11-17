@@ -22,42 +22,38 @@ questionCareer.addEventListener('change',()=>{
         case ("TEC. SUP. EN DESARROLLO DE SOFTWARE"):{
             questionSuitableSubject.innerHTML = ``
             questionSuitableSubject.innerHTML += `
-            <option value="programacion">Programación de Software</option>
-            <option value="algoritmos">Algoritmos y Estructuras de Datos</option>
-            <option value="diseñoWeb">Diseño Web</option>
-            <option value="basesDeDatos">Bases de Datos</option>
-            <option value="seguridadInformatica">Seguridad Informática</option>
-            <option value="desarrolloMovil">Desarrollo de Aplicaciones Móviles</option>
-            <option value="testing">Pruebas de Software (Testing)</option>
-            <option value="inteligenciaArtificial">Inteligencia Artificial</option>
-            <option value="desarrolloAgil">Desarrollo Ágil de Software</option>
-            <option value="ingenieriaSoftware">Ingeniería de Software</option>
-            <option value="desarrolloFrontend">Desarrollo Frontend</option>
-            <option value="desarrolloBackend">Desarrollo Backend</option>
-            <option value="arquitecturaSoftware">Arquitectura de Software</option>
-            <option value="gestionProyectos">Gestión de Proyectos de Software</option>
-            <option value="calidadSoftware">Calidad de Software</option>
-            <option value="Otra">Otras</option>
+            <option value="Arquitectura y sistemas operativos"> Arquitectura y sistemas operativos</option>
+            <option value="Algoritmos y estructura de datos"> Algoritmos y estructura de datos</option>
+            <option value="Taller de lenguaje de programacion"> Taller de lenguaje de programacion</option>
+            <option value="Base de datos"> Base de datos</option>
+            <option value="Practica Profesional"> Practica Profesional</option>
+            <option value="Laboratorio de Ingles"> Laboratorio de Ingles</option>
+            <option value="Matematica aplicada"> Matematica aplicada</option>
+            <option value="Tecnologia y sociedad"> Tecnologia y sociedad</option>
+            <option value="Ingenieria de software"> Ingenieria de software</option>
+            <option value="Seminarios de talleres de actualizacion"> Seminarios de talleres de actualizacion</option>
+            <option value="Orientacion en valores y motivacional"> Orientacion en valores y motivacional</option>
             `
             break;
         }case ('TEC. SUP. TELECOMUNICACIONES' ):{
             questionSuitableSubject.innerHTML = ``
             questionSuitableSubject.innerHTML += `
-            <option value="telecomFundamentos">Fundamentos de Telecomunicaciones</option>
-            <option value="redesDatos">Redes de Datos</option>
-            <option value="teoriaSenales">Teoría de Señales y Sistemas</option>
-            <option value="comunicacionesMoviles">Comunicaciones Móviles</option>
-            <option value="tecnologiaFibraOptica">Tecnología de Fibra Óptica</option>
-            <option value="antenasPropagacion">Antenas y Propagación de Ondas</option>
-            <option value="telecomSatelital">Comunicaciones Satelitales</option>
-            <option value="criptografia">Criptografía y Seguridad en Comunicaciones</option>
-            <option value="procesamientoImagenes">Procesamiento de Imágenes y Señales</option>
-            <option value="internetOfThings">Internet de las Cosas (IoT)</option>
-            <option value="comunicacionesInalambricas">Comunicaciones Inalámbricas</option>
-            <option value="tecnologia4G5G">Tecnología 4G y 5G</option>
-            <option value="telecomRedesOpticas">Redes Ópticas de Telecomunicaciones</option>
-            <option value="seguridadRedes">Seguridad en Redes de Telecomunicaciones</option>
-            <option value="telemetria">Telemetría y Control Remoto</option>
+            <option value="Calculo aplicado a las telecomunicaciones">Calculo aplicado a las telecomunicaciones</option>
+            <option value="Fisica aplicada a las telecomunicaciones">Fisica aplicada a las telecomunicaciones</option>
+            <option value="Señales y sistemas continuos y discretos">Señales y sistemas continuos y discretos</option>
+            <option value="Introduccion a la progamacion">Introduccion a la progamacion</option>
+            <option value="Fundamentos de las telecomunicaciones">Fundamentos de las telecomunicaciones</option>
+            <option value="Laboratorio de electrotecnia, electronica analogica y digital">Laboratorio de electrotecnia, electronica analogica y digital</option>
+            <option value="Ingles tecnico">Ingles tecnico</option>
+            <option value="Comunicaciones analogicas">Comunicaciones analogicas</option>
+            <option value="Laboratorio de electromagnetismo aplicado">Laboratorio de electromagnetismo aplicado</option>
+            <option value="Comunicaciones degitales">Comunicaciones degitales</option>
+            <option value="Laboratorio de redes de datos y comunicaciones">Laboratorio de redes de datos y comunicaciones</option>
+            <option value="Gestion y mantenimiento de calidad">Gestion y mantenimiento de calidad</option>
+            <option value="Sistemas opticos">Sistemas opticos</option>
+            <option value="Normativas de comunicaciones">Normativas de comunicaciones</option>
+            <option value="Economia y proyectos">Economia y proyectos</option>
+            <option value="Seguridad e higiene industrial">Seguridad e higiene industrial</option>
             `
             break;
         }
@@ -65,64 +61,42 @@ questionCareer.addEventListener('change',()=>{
         case ('TEC. SUP. MECATRÓNICA'):{
             questionSuitableSubject.innerHTML = ``
             questionSuitableSubject.innerHTML += `
-            <option value="mecatronicaFundamentos">Fundamentos de Mecatrónica</option>
-            <option value="controlAutomatico">Control Automático</option>
-            <option value="robotica">Robótica Industrial</option>
-            <option value="electronicaDigital">Electrónica Digital</option>
-            <option value="mecanica">Mecánica de Materiales</option>
-            <option value="sistemasEmbebidos">Sistemas Embebidos</option>
-            <option value="instrumentacion">Instrumentación y Medición</option>
-            <option value="automatizacionIndustrial">Automatización Industrial</option>
-            <option value="procesamientoImagenes">Procesamiento de Imágenes y Visión Artificial</option>
-            <option value="inteligenciaArtificial">Inteligencia Artificial Aplicada</option>
-            <option value="energiasRenovables">Energías Renovables en Mecatrónica</option>
-            <option value="diseñoMecatronico">Diseño Mecatrónico de Sistemas</option>
-            <option value="mecatronicaMovil">Mecatrónica Móvil y Autónoma</option>
-            <option value="controlCalidad">Control de Calidad en Mecatrónica</option>
-            <option value="tecnologiaIndustria40">Tecnología de la Industria 4.0</option>`
+            <option value="Ingles tecnico">Ingles tecnico</option>
+            <option value="Seguridad e Higiene industrial">Seguridad e Higiene industrial</option>
+            <option value="Metro fisica">Metro fisica</option>
+            <option value="Elementos de maquinas">Elementos de maquinas</option>
+            <option value="Taller de dibujo tecnico">Taller de dibujo tecnico</option>
+            <option value="Taller de matematica">Taller de matematica</option>
+            <option value="Sistema hidraulicos y neumaticos">Sistema hidraulicos y neumaticos</option>
+            <option value="Sistema electricos y electronicos">Sistema electricos y electronicos</option>
+            <option value="Introduccion a la mecatronica">Introduccion a la mecatronica</option>
+            <option value="Taller de electricidad y electronica">Taller de electricidad y electronica</option>
+            <option value="Diseño industrial y CAD">Diseño industrial y CAD</option>
+            <option value="Sistema mecanico">Sistema mecanico</option>
+            <option value="Integracion de sistemas">Integracion de sistemas</option>
+            <option value="Robotica">Robotica</option>
+            `
             break;
-        }case('TEC. SUP. EN BIOQUÍMICA'):{
+        }case('TEC. SUP. EN QUIMICA INDUSTRIAL'):{
             questionSuitableSubject.innerHTML = ``
             questionSuitableSubject.innerHTML += `
-            <option value="bioquimicaBasica">Bioquímica Básica</option>
-            <option value="biologiaMolecular">Biología Molecular</option>
-            <option value="quimicaAnalitica">Química Analítica en Bioquímica</option>
-            <option value="microbiologia">Microbiología y Virología</option>
-            <option value="bioquimicaClinica">Bioquímica Clínica</option>
-            <option value="hematologia">Hematología y Coagulación</option>
-            <option value="quimicaOrganica">Química Orgánica en Bioquímica</option>
-            <option value="genetica">Genética y Biología Celular</option>
-            <option value="inmunologia">Inmunología y Serología</option>
-            <option value="bioquimicaAlimentos">Bioquímica de Alimentos y Nutrición</option>
-            <option value="toxicologia">Toxicología y Análisis de Drogas</option>
-            <option value="metodosDiagnostico">Métodos de Diagnóstico en Bioquímica</option>
-            <option value="biotecnologia">Biotecnología y Genómica en Bioquímica</option>
-            <option value="quimicaFarmaceutica">Química Farmacéutica y Farmacología</option>
-            <option value="eticaBioquimica">Ética y Legislación en Bioquímica</option>
-            <option value="biomedicina">Biomedicina</option>`
-            break;
-        }case ('OTROS'):{
-            divCareer.innerHTML = "";
-            divCareer.innerHTML=`
-            <input
-            type="text"
-            class="form-control input"
-            id="carrera"
-            aria-describedby="validationTooltipUsernamePrepend"
-            required
-          />
+            <option value="Analisis de dato">Analisis de datos</option>
+            <option value="Formulacion y preparacion de mezcla">Formulacion y preparacion de mezclas</option>
+            <option value="Operaciones basicas en la industria quimic">Operaciones basicas en la industria quimica</option>
+            <option value="Generacion y recuperacion de energi">Generacion y recuperacion de energia</option>
+            <option value="Practica profesionalizant">Practica profesionalizante</option>
+            <option value="Ingles tecnic">Ingles tecnico</option>
+            <option value="Acondicionamiento y almacenamiento de productos quimico">Acondicionamiento y almacenamiento de productos quimicos</option>
+            <option value="Regulacion y control de procesos quimico">Regulacion y control de procesos quimicos</option>
+            <option value="Mantenimiento electromecanico en insdustrias de proces">Mantenimiento electromecanico en insdustrias de proceso</option>
+            <option value="prevencion de riesgos en industrias quimica">prevencion de riesgos en industrias quimicas</option>
+            <option value="Formacion y orientacion labora">Formacion y orientacion laboral</option>
+            <option value="Transporte de solidos y fluido">Transporte de solidos y fluidos</option>
+            <option value="Reactores quimico">Reactores quimicos</option>
+            <option value="Comunicacio">Comunicacion</option>
+            <option value="Ciencia sociedad y estad">Ciencia sociedad y estado</option>
+            <option value="Gestion de emprendimientos">Gestion de emprendimientos</option>
             `
-            questionSuitableSubject.innerHTML = "";
-            divSubject.innerHTML = 
-            `
-            <input
-            type="text"
-            class="form-control input"
-            id="materiaAdecuada"
-            aria-describedby="validationTooltipUsernamePrepend"
-            required
-          />`
-            
             break;
         }
     }
@@ -134,7 +108,7 @@ formEncuesta.addEventListener('submit',async(e)=>{
     formData.append('localidad_id',selectLocalidad.value);
     formData.append('genre_id',selectGenre.value);
     const responses = {
-        questionId: [1, 2, 3, 4, 5,6],
+        questionId: [1, 2, 3, 4, 5, 6],
         response: [
             questionCareer.value,
             questionSuitableSubject.value,
