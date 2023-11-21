@@ -8,21 +8,19 @@ import { Quiz,
 
 
     export const createQuiz = async (req, res) => {
-        const { localidad_id, genre_id, responses } = req.body;
+        const { localidad, genero, edad, carrera, materiaAdecuada, materiaAgregar,esObsoleto,materiaInnecesaria, responses } = req.body;
         console.log(req.body);
         try {
-            let locality_id = parseInt(localidad_id);
-            const newQuiz = await Quiz.create({ locality_id, genre_id});
+            let locality_id = parseInt(localidad);
+            const newQuiz = await Quiz.create({ locality_id, genre_id: genero});
             if (!newQuiz) {
                 return res.status(400).json({ message: 'Quiz not created' });
             }
             
-            const parsedResponses = JSON.parse(responses); // Convierte la cadena JSON en un objeto
-    
-            for (let i = 0; i < parsedResponses.response.length; i++) {
-                console.log(parsedResponses.response[i], parsedResponses.questionId[i]);
-                let newResponse = await Response.create({ response: parsedResponses.response[i] });
-                let findQuestion = await Question.findByPk(parsedResponses.questionId[i]);
+            const response = [carrera, materiaAdecuada, materiaAgregar,esObsoleto,materiaInnecesaria,edad ]
+            for (let i = 0; i < response.length; i++) {
+                let newResponse = await Response.create({ response: response[i] });
+                let findQuestion = await Question.findByPk(responses  .questionId[i]);
                 console.log(findQuestion);
                 await newResponse.addQuestion(findQuestion);
                 await newQuiz.addQuizResponses(newResponse);
