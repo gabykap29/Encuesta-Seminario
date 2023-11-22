@@ -55,9 +55,11 @@ const Form = ()=>{
           },
           body: JSON.stringify(form)
         })
-        const data = res.json();
+        const data = JSON.stringify(res);
         setResForm(data);
-        console.log(resForm);
+        alert("Encuesta completada con éxito!");
+        const formEn = document.getElementById("formEncuesta");
+        formEn.reset();
     };
 
     return (
